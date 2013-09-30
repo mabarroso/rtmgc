@@ -1,0 +1,3 @@
+[submodule "sync"]
+	path = sync
+	url = ssh://git@git.lab.mabarroso.com/rtmgc/sync.git
