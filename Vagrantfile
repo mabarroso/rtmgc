@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "sync" do |sync|
     sync.vm.hostname = "sync"
 
-    sync.vm.network :private_network, ip: "172.16.1.1"
+    sync.vm.network :private_network, ip: "172.16.1.2"
 
     sync.vm.synced_folder  '.', '/vagrant'
     sync.vm.provision "shell", path: "vagrant_provision_sync.sh"
